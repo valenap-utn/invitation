@@ -3,10 +3,14 @@ html {
 }
 
 header {
-    display: flex;
-    background-color: #fff;
-    border-bottom: 1px solid rgba(110, 109, 109, 0.2);
-    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: #536976; 
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    background: linear-gradient(to right, #292E49, #536976); 
+    opacity: 80%;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 body {
@@ -23,6 +27,11 @@ h1 {
     line-height: 75px;
     align-items: center;
     padding:12px 0px 0px 12px;
+}
+
+.banner-gallery a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 ::selection{
@@ -54,7 +63,7 @@ h1 {
 
 .carousel-inner img {
     width: 100%;
-    height: 650px;
+    height: 650px; 
     object-fit: cover; 
 }
 
@@ -194,20 +203,17 @@ h1 {
     display: block;
     margin: 20px auto 0;
     padding: 10px 20px;
-    /*background-color: #7699df;*/
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #536976;  
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
     background: linear-gradient(to right, #292E49, #536976);
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
-    /*transition: background-color 0.3s ease;*/
     opacity: 0.76;
     -webkit-transition: opacity 500ms ease, padding-top 500ms ease;
-    /*transition: opacity 500ms ease, padding-top 500ms ease;*/
     transition: transform 0.3s ease-in-out 0s;
 }
 
@@ -216,31 +222,95 @@ h1 {
     transform: scale(1.1);
 }
 
-/* LISTA DE ASISTENCIA */
-#section-asistance {
+#goToGal {
+    margin-bottom: 30px;
+}
+
+/* CHOOSE YOUR GALLERY */
+.card-category {
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+    width: 427px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 10px;
+}
+
+@media (max-width: 575px) {
+    .card-category {
+        width: 300px;
+    }
+}
+
+.card-category h2 {
+    font-size: 1.6em;
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.card-category:hover h2 {
+    transform: scale(1.3);
+}
+
+.cards {
     width: 100%;
-    margin: 20px;
-    justify-content: left;
+    justify-content: center;
 }
 
-#attendees-list {
-    margin: 20px auto;
-    padding: 10px;
-    max-width: 500px;
+.cards a {
+    color: #000000;
 }
 
-#attendees {
-    list-style-type: none;
-    padding: 0;
+.cards a:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* FOOTER */
 .footer {
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #536976;  
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    background: linear-gradient(to right, #292E49, #536976); 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -315,5 +385,35 @@ h1 {
         font-size: 12px;
         line-height: 1.2;
         white-space: normal;
+    }
+}
+
+/* BUTTON - BACK */
+.banner-gallery {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.back {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #F4F4F4;
+    opacity: 0.75;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.back:hover {
+    opacity: 1;
+    transform: translate(-8px, -50%);
+}
+
+@media (max-width: 768px) {
+    .back {
+        display: none;
     }
 }
