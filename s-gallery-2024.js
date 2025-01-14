@@ -885,6 +885,10 @@ const images = [
         fullSize: "2024/IMG_7433.jpeg"
     },
     {
+        thumbnail: "thumbnails/2024/IMG_7530.jpeg",
+        fullSize: "2024/IMG_7530.jpeg"
+    },
+    {
         thumbnail: "thumbnails/2024/0bbea947-686d-419d-a3ec-109bb3d2ba3c.jpeg",
         fullSize: "2024/0bbea947-686d-419d-a3ec-109bb3d2ba3c.jpeg"
     },
