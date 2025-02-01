@@ -133,6 +133,10 @@ h1 {
     /*gap: 20px;*/
 }
 
+.contact-container > div{
+    flex: 1;
+}
+
 .tarjetita {
     text-align: left; 
     padding: 20px;
