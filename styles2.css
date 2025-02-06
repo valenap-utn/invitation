@@ -230,6 +230,10 @@ h1 {
     margin-bottom: 30px;
 }
 
+#goToWho {
+    margin-bottom: 30px;
+}
+
 /* CHOOSE YOUR GALLERY */
 .card-category {
     background-size: cover;
