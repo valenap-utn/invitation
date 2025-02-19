@@ -1,7 +1,7 @@
 const people = [
   {
     name: "Abril Pérez",
-    description: "Responde al llamado de \"Abru\". Una chica con mucho conocimiento general para compartir. Un dato curioso: ambos padres se apellidan \"Perez\" 🤨",
+    description: "Responde al llamado de \"Abru\". Una chica con mucho conocimiento general para compartir.",
     img: "./data/personas/abru.jpeg "
   },
   {
@@ -41,8 +41,13 @@ const people = [
   },
   {
     name: "Florencia Yñiguez",
-    description: "Esta muchacha responde a \"Florchu\" o \"Flor\", muy copada, de los mejores Fernet que he probado y mejor compañera de Gins",
+    description: "Esta muchacha responde a \"Florchu\" o \"Flor\", muy copada, y mi mejor compañera de Gins",
     img: "./data/personas/flor.jpeg "
+  },
+  {
+    name: "Joaquín Villarreal",
+    description: "Un pibe chill de cojones, le decimos \"Joaco\". Es otro de los chicos que comenzó a aparecer debido a nuestro amigo \"Santy\" (eran amigos del colegio)",
+    img: "./data/personas/joaco.jpeg "
   },
   {
     name: "Lucas Fernandez Capiet",
@@ -96,27 +101,27 @@ const people = [
   },
   {
     name: "Paula López",
-    description: "",
+    description: "Si la ves con cara de ortiva dale unas cervecitas y solucionado el problema 😜. Ella es \"Pau\"",
     img: "./data/personas/pau.jpeg "
   },
   {
     name: "Santiago Invernizzi",
-    description: "", //Este pibe es el típico que cree saberselas todas, pero a pesar de eso,
+    description: "Este es el típico pibe que cree saberselas todas, pero vos y yo sabemos que gran parte de lo que dice es puro chamuyo. Le decimos \"Gatete\" (preguntale el por qué)",
     img: "./data/personas/gatete.jpeg "
   },
   {
     name: "Santiago Pérez",
-    description: "",
+    description: "Con este chico te cag4s de risa toda la noche, sin dudas. Le decimos \"santy\" o \"el nene\"",
     img: "./data/personas/santy.jpeg "
   },
   {
     name: "Thiago Enríquez",
-    description: "",
+    description: "Y como en todo grupo siempre tiene que haber un \"Chino\", acá lo tenemos",
     img: "./data/personas/chino.jpeg "
   },
   {
     name: "Thiago García",
-    description: "",
+    description: "Él también es un niño sistemas. Responde al llamado de \"Thiago\"",
     img: "./data/personas/thia.jpeg "
   }
 ]
