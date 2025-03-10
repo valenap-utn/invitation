@@ -1,7 +1,7 @@
 const people = [
   {
     name: "Abril Pérez",
-    description: "Responde al llamado de \"Abru\". Una chica con mucho conocimiento general para compartir.",
+    description: "Responde al llamado de \"Abru\". Una chica con mucho conocimiento general para compartir",
     img: "./data/personas/abru.jpeg "
   },
   {
@@ -25,8 +25,8 @@ const people = [
     img: "./data/personas/coni.jpeg "
   },
   {
-    name: "Facundo Curti",
-    description: "The madafvkin bull",
+    name: "Facundo \"Toro\" Curti",
+    description: "Su apodo lo dice todo. Si querés saber más hablale sin miedo 😉",
     img: "./data/personas/curco.jpeg "
   },
   {
