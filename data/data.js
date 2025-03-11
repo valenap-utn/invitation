@@ -116,7 +116,7 @@ const people = [
   },
   {
     name: "Thiago Enríquez",
-    description: "Y como en todo grupo siempre tiene que haber un \"Chino\", acá lo tenemos",
+    description: "Y como en todo grupo siempre tiene que haber un \"Chino\", acá lo tenemos, de bajo presupuesto peeero cumplimos",
     img: "./data/personas/chino.jpeg "
   },
   {
