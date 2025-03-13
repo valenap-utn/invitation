@@ -61,7 +61,7 @@ const people = [
   },
   {
     name: "Magalí González Di Carlo",
-    description: "Al principio, la chica no muestra su mejor cara, pero es copada ! La podés encontrar jugando al Minecraft, sino también atiende al nombre de \"Magui\" o \"Maguilu\"",
+    description: "Al principio, la chica no muestra su mejor cara, pero es copada ! La podés encontrar platinando algún jueguito en Steam, sino también atiende al nombre de \"Magui\" o \"Maguilu\"",
     img: "./data/personas/magui.jpeg "
   },
   {
