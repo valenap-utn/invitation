@@ -121,6 +121,29 @@
                 </div>
             </div>
         </div>
+        <!--  CUENTA REGRESIVA  -->
+        <div class="full-screen-div">
+            <h1 class="h1-full-screen">CUENTA REGRESIVA</h1>
+            <p class="h1-full-screen" style="padding-top: 10px">Para el cumple de valucha 😈</p>
+            <div class="countdown">
+                <div>
+                    <span id="dias">0</span>
+                    <p class="format-text-countdown">dias</p>
+                </div>
+                <div>
+                    <span id="horas">0</span>
+                    <p class="format-text-countdown">horas</p>
+                </div>
+                <div>
+                    <span id="minutos">0</span>
+                    <p class="format-text-countdown">minutos</p>
+                </div>
+                <div>
+                    <span id="segundos">0</span>
+                    <p class="format-text-countdown">segundos</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--    FOOTER      -->
@@ -151,6 +174,50 @@
             });
         }
         document.querySelector('.build').addEventListener('click',confettiFY);
+    </script>
+
+    <!--  PARA CUENTA REGRESIVA   -->
+    <style>
+        .countdown_final {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #F4F4F4;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        function actualizarCountdown(){
+            const fechaActual = new Date();
+            const fechaFestejo = new Date(`April 17, ${fechaActual.getFullYear()} 21:00:00`);
+
+            const diasRestantes = fechaFestejo - fechaActual; //milisegundos
+
+            if(diasRestantes <= 0){
+                const countdown_element = document.querySelector('.countdown')
+
+                countdown_element.innerHTML = 'Nos la damos en la peraaaa ! 🤪🍐'
+
+                //Estilo para countdown_element
+                countdown_element.classList.add('countdown_final')
+
+                clearInterval(intervalo);
+                return;//para no seguir ejecutando el resto del codigo
+            }
+
+            const dias = Math.floor(diasRestantes / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diasRestantes % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diasRestantes % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diasRestantes % (1000 * 60)) / 1000);
+
+            document.getElementById('dias').textContent = dias;
+            document.getElementById('horas').textContent = horas;
+            document.getElementById('minutos').textContent = minutos;
+            document.getElementById('segundos').textContent = segundos;
+        }
+
+        const intervalo = setInterval(actualizarCountdown, 1000);
+        actualizarCountdown(); //para evitar delay
     </script>
     
     <script src="script.js"></script>
