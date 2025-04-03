@@ -56,7 +56,7 @@ const people = [
   },
   {
     name: "Lautaro Centurión",
-    description: "Esta otro chicuelo es el mejor amigo de Ivi. Le decimos \"Lauty\" o \"Centu\". En su tiempo libre toca la guitarra o se tira unos pasos que está como para ganar en una competencia, si hubiera",
+    description: "Este otro chicuelo es el mejor amigo de Ivi. Le decimos \"Lauty\" o \"Centu\". En su tiempo libre toca la guitarra o se tira unos pasos que está como para ganar en una competencia, si hubiera",
     img: "./data/personas/lautaro.jpeg "
   },
   {
