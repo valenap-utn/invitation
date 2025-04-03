@@ -45,9 +45,19 @@ const people = [
     img: "./data/personas/flor.jpeg "
   },
   {
+    name: "Iván López",
+    description: "Esta chicuelo es el hermanito (no tan chico ya) de Pau. En su tiempo libre disfruta de jugar al basket, tiro el dato por si les pinta jugar un rato. Le decimos \"Ivi\"",
+    img: "./data/personas/ivan.jpeg "
+  },
+  {
     name: "Joaquín Villarreal",
     description: "Un pibe chill de cojones, le decimos \"Joaco\". Es otro de los chicos que comenzó a aparecer debido a nuestro amigo \"Santy\" (eran amigos del colegio)",
     img: "./data/personas/joaco.jpeg "
+  },
+  {
+    name: "Lautaro Centurión",
+    description: "Esta otro chicuelo es el mejor amigo de Ivi. Le decimos \"Lauty\" o \"Centu\". En su tiempo libre toca la guitarra o se tira unos pasos que está como para ganar en una competencia, si hubiera",
+    img: "./data/personas/lautaro.jpeg "
   },
   {
     name: "Lucas Fernandez Capiet",
