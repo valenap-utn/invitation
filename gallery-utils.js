@@ -3,7 +3,7 @@ export function initGallery(images) {
     const galleryContainer = document.getElementById("gallery-container");
 
     //Modals
-    const modal = document.getElementById(containerID);
+    const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
     const closeModal = document.getElementById("close-modal");
 
@@ -27,7 +27,6 @@ export function initGallery(images) {
 
     //Mostrar imagen grande en el modal
     function showImage(index){
-        console.log("Ruta de la imagen:", images[index].fullSize); // Muestra la ruta de la imagen
         modal.classList.remove("hidden");
         modalImg.src = images[index].fullSize; //usa la img completa
     }
@@ -58,7 +57,7 @@ export function initGallery(images) {
                 currentIndex = (currentIndex + 1) % images.length;
                 showImage(currentIndex);
             }else if (e.key === "Escape") {
-                modal.classList.remove("hidden");
+                modal.classList.add("hidden");
             }
         }
     });

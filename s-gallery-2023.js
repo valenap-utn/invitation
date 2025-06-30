@@ -699,6 +699,5 @@ const images = [
         fullSize: "2023/IMG_9145.jpeg"
     }
 ];
-window.onload = function () {
-    initGallery(images);
-};
+
+initGallery(images);
